@@ -5,4 +5,30 @@ body{
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
+    padding-left: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+.Header{
+    padding-top: 72px;
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 36px;
+}
+
+textarea {
+    resize: none;
+ }
+
+.FormularUeberschrift{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.FormularBG{
+    padding: 5px;
+    /* box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    filter: blur(10px); */
 }
