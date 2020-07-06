@@ -1,3 +1,9 @@
+*{
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body{
     background-image: url(src/BG.jpg);
     background-size: cover;
@@ -6,7 +12,10 @@ body{
     margin: 0px;
     padding: 0px;
     padding-left: 36px;
+    padding-right: 36px;
     font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    width: 100%;
 }
 .Header{
     padding-top: 72px;
@@ -24,11 +33,56 @@ textarea {
     font-size: 15px;
     font-weight: 700;
     color: white;
+    width: auto;
 
 }
 
 .FormularBG{
-    padding: 5px;
-    /* box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
-    filter: blur(10px); */
+    position: relative;
+    overflow: hidden;
+    background: inherit;
+    height: 65px;
+    border-radius: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+.FormularBG:before{
+    position: absolute;
+    content: "";
+    width: auto;
+    height: auto;
+    background: inherit;
+    left: -25px;
+    right: -25px;
+    top: -25px;
+    bottom: -25px;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    filter: blur(10px);
+}
+
+.nameicon{
+
+}
+
+.entername{
+    
+    }
+
+button {
+    background-color: #94C0E0;
+    justify-content: center;
+    height: 65px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 36px;
+    left: 36px;
+    right: 36px;
+    width: calc(100% - 72px);
+    border: none;
+    border-radius: 18px;
+    font: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
 }
